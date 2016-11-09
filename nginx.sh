@@ -14,6 +14,7 @@ run cp /pd_build/config/nginx_odoo_default.conf /etc/nginx/conf.d/default.conf
 ## Install Nginx runit service.
 run mkdir /etc/service/nginx
 run cp /pd_build/runit/nginx /etc/service/nginx/run
+run touch /etc/service/nginx/down
 
 run mkdir /etc/service/nginx-log-forwarder
 run cp /pd_build/runit/nginx-log-forwarder /etc/service/nginx-log-forwarder/run
