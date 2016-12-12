@@ -9,6 +9,7 @@ cryptography
 decorator
 dnspython
 docutils
+ebaysdk
 feedparser
 flanker
 gdata
@@ -56,6 +57,7 @@ simplejson
 six
 SOAPpy
 suds==0.4
+suds-jurko
 unittest2
 vatnumber
 vobject
