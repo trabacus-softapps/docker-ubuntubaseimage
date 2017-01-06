@@ -53,6 +53,7 @@ qrcode
 reportlab
 requests
 requests_futures
+requests_oauthlib
 simplejson
 six
 SOAPpy
