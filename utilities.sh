@@ -7,7 +7,7 @@ run minimal_apt_get_install build-essential libpq-dev libxrender1 fontconfig xvf
 run minimal_apt_get_install postgresql-client-9.6 nodejs 
 run npm install -g less less-plugin-clean-css
 run npm cache clear
-curl -Lf -o /tmp/wkhtmltox-0.12.4-amd64.tar.xz http://download.gna.org/wkhtmltopdf/0.12/0.12.4/wkhtmltox-0.12.4_linux-generic-amd64.tar.xz
+curl -Lf -o /tmp/wkhtmltox-0.12.4-amd64.tar.xz https://downloads.wkhtmltopdf.org/0.12/0.12.4/wkhtmltox-0.12.4_linux-generic-amd64.tar.xz
 run cd /opt/
 run sudo tar xf /tmp/wkhtmltox-0.12.4-amd64.tar.xz 
 run sudo ln -s /opt/wkhtmltox/bin/wkhtmltopdf /usr/bin/wkhtmltopdf
