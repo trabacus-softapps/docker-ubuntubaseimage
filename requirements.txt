@@ -18,6 +18,7 @@ GeoIP
 gevent
 graphviz
 greenlet
+html2text
 j2cli
 jcconv
 Jinja2
@@ -26,6 +27,7 @@ Mako
 MarkupSafe
 mock
 numpy
+num2words
 ofxparse
 passlib
 Pillow
@@ -38,6 +40,7 @@ pydot
 pyinotify
 pyjon.utils
 PyJWT
+pyldap
 pyopenssl
 pyparsing
 pyPdf
