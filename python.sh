@@ -5,10 +5,10 @@ source /pd_build/buildconfig
 header "Installing Python..."
 
 ## Install Python.
-run apt-get install -y python python-dev
-curl https://bootstrap.pypa.io/get-pip.py | python
+run apt-get install -y python3 python3-dev
+curl https://bootstrap.pypa.io/get-pip.py | python3
 run pip install --upgrade --use-wheel --no-index --pre \
         --find-links=/pd_build/lib  --requirement=/pd_build/requirements.txt
 
 ## fixed “libGeoIP.so.1: cannot open shared object No such file or directory” error
-run apt-get install -y python-geoip
+run apt-get install -y python3-geoip
