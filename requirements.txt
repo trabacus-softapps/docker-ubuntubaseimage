@@ -31,6 +31,7 @@ PyYAML==3.12
 qrcode==5.3
 reportlab==3.3.0
 requests==2.11.1
+simplejson==3.13.2
 six==1.10.0
 suds-jurko==0.6
 vatnumber==1.2
