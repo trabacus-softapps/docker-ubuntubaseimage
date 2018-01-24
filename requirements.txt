@@ -18,6 +18,7 @@ num2words==0.5.4
 ofxparse==0.16
 passlib==1.6.5
 Pillow==3.4.1
+paramiko
 psutil==4.3.1
 psycopg2==2.7.3.2
 pydot==1.2.3
