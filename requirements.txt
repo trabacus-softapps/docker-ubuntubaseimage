@@ -10,6 +10,7 @@ gevent==1.1.2
 greenlet==0.4.10
 html2text==2016.9.19
 Jinja2==2.8
+jsonschema
 lxml==3.5.0
 Mako==1.0.4
 MarkupSafe==0.23
@@ -39,6 +40,7 @@ requests-futures
 route53
 simplejson==3.13.2
 six==1.10.0
+stripe
 suds-jurko==0.6
 vatnumber==1.2
 vobject==0.9.3
