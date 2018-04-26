@@ -22,6 +22,7 @@ html2text
 j2cli
 jcconv
 Jinja2
+jsonschema
 lxml
 Mako
 MarkupSafe
@@ -60,6 +61,7 @@ requests_oauthlib
 simplejson
 six
 SOAPpy
+stripe
 suds==0.4
 unittest2
 vatnumber
