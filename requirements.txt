@@ -22,6 +22,7 @@ Pillow==3.4.1
 paramiko
 psutil==4.3.1
 psycopg2==2.7.3.2
+pycrypto
 pydot==1.2.3
 pyldap==2.4.28
 pyparsing==2.1.10
