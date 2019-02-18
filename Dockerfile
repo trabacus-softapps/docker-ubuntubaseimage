@@ -7,7 +7,7 @@
 # to `latest`! See
 # https://github.com/phusion/baseimage-docker/blob/master/Changelog.md
 # for a list of version numbers.
-FROM phusion/baseimage:0.9.22
+FROM phusion/baseimage:0.11
 MAINTAINER Arun T K <arun.kalikeri@xxxxxxxx.com>
 
 ADD . /pd_build
