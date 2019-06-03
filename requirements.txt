@@ -32,6 +32,7 @@ psycopg2==2.7.3.2; sys_platform != 'win32'
 pycrypto
 pycryptodomex
 pydot==1.2.3
+pyfcm==1.4.7
 pyldap==2.4.28; sys_platform != 'win32'
 pyparsing==2.1.10
 PyPDF2==1.26.0
