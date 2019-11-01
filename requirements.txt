@@ -32,6 +32,7 @@ pycrypto
 pycryptodomex
 pydot==1.2.3
 pyldap==2.4.28; sys_platform != 'win32'
+pyOpenSSL
 pyparsing==2.1.10
 PyPDF2==1.26.0
 pyserial==3.1.1
@@ -43,7 +44,6 @@ PyYAML==3.12
 qrcode==5.3
 reportlab==3.3.0
 requests==2.20.0
-requests[security]
 requests_oauthlib
 requests-futures
 route53
