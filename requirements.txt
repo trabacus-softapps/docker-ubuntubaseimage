@@ -43,7 +43,7 @@ pyusb==1.0.0
 PyYAML==3.12
 qrcode==5.3
 reportlab==3.3.0
-requests==2.20.0
+requests[security]
 requests_oauthlib
 requests-futures
 route53
