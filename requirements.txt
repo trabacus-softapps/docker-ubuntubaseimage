@@ -45,10 +45,11 @@ qrcode==5.3
 reportlab==3.3.0
 requests[security]
 requests_oauthlib
+requests_pkcs12
 requests-futures
 route53
 simplejson==3.13.2
-six==1.10.0
+six
 stripe
 suds-jurko==0.6
 vatnumber==1.2
