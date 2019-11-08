@@ -15,6 +15,6 @@ echo "deb http://apt.postgresql.org/pub/repos/apt/ bionic-pgdg main" > /etc/apt/
 ##echo "deb http://nginx.org/packages/ubuntu/ bionic nginx" > /etc/apt/sources.list.d/nginx.list
 
 ## Nodejs Latest
-## curl -sL https://deb.nodesource.com/setup_10.x | bash -
+curl -sL https://deb.nodesource.com/setup_10.x | bash -
 run apt-get update
 run apt-get upgrade -y -o Dpkg::Options::="--force-confold"
