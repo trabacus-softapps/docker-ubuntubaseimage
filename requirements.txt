@@ -11,6 +11,7 @@ dnspython
 docutils
 ebaysdk
 feedparser
+firebase-admin
 flanker
 gdata
 genshi
@@ -58,6 +59,7 @@ reportlab
 requests
 requests_futures
 requests_oauthlib
+requests_pkcs12
 simplejson
 six
 SOAPpy
