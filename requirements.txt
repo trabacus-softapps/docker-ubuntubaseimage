@@ -9,6 +9,7 @@ cryptography
 decorator
 dnspython
 docutils
+dwollav2
 ebaysdk
 feedparser
 firebase-admin
