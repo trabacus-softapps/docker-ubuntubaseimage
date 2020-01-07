@@ -5,6 +5,7 @@ chardet==3.0.4
 docker
 decorator==4.0.10
 docutils==0.12
+dwollav2
 ebaysdk==2.1.5
 feedparser==5.2.1
 firebase-admin
