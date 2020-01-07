@@ -17,6 +17,6 @@ run sudo ln -s /usr/local/bin/wkhtmltoimage /usr/bin/wkhtmltoimage
 #
 # We only use the city db, you can add the country db and others if you want them.
 run mkdir -p /usr/share/geoip 
-run cp /pd_build/geolite2/GeoLite2-City_20200107.tar.gz /tmp/city.tar.gz
+run cp /pd_build/lib/GeoLite2-City_20200107.tar.gz /tmp/city.tar.gz
 run tar xf /tmp/city.tar.gz -C /usr/share/geoip --strip 1
 run ls -al /usr/share/geoip/
