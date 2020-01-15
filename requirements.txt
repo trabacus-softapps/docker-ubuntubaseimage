@@ -9,6 +9,7 @@ cryptography
 decorator
 dnspython
 docutils
+dwollaswagger
 dwollav2
 ebaysdk
 feedparser
