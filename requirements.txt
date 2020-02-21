@@ -67,6 +67,7 @@ six
 SOAPpy
 stripe
 suds==0.4
+twilio
 unittest2
 vatnumber
 vobject
