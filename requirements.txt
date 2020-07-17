@@ -1,83 +1,56 @@
 #### To build wheel archives (pip wheel --requirement=pip-req.txt --wheel-dir=/tmp/wheelhouse)  or to run pip install --upgrade --requirement=pip-req.txt  #### Install - sudo apt-get install python-dev libffi-dev libssl-dev libxml2-dev libxslt1-dev libjpeg-dev libfreetype6-dev zlib1g-dev libldap2-dev libsasl2-dev libpq-dev build-essential autoconf libtool pkg-config
 
-argparse
-argon2_cffi
-authy
-Babel
-beautifulsoup4
-cffi
-cryptography
-decorator
-dnspython
-docutils
-dwollaswagger
-dwollav2
-ebaysdk
-feedparser
-firebase-admin
-flanker
-gdata
-genshi
-GeoIP
-gevent
-graphviz
-greenlet
-html2text
-j2cli
-jcconv
-Jinja2
-jsonschema
-lxml
-Mako
-MarkupSafe
-mock
-numpy
-num2words
-ofxparse
-passlib
-Pillow
-psutil
-psycogreen
-psycopg2
-PyChart
+Babel==2.3.4
+decorator==4.0.10
+docutils==0.12
+ebaysdk==2.1.5
+feedparser==5.2.1
+gevent==1.1.2 ; sys_platform != 'win32' and python_version < '3.7'
+gevent==1.3.4 ; sys_platform != 'win32' and python_version >= '3.7'
+gevent==1.4.0 ; sys_platform == 'win32' and python_version >= '3.7'
+greenlet==0.4.10 ; python_version < '3.7'
+greenlet==0.4.13 ; python_version >= '3.7'
+html2text==2016.9.19
+Jinja2==2.10.1
+lxml==3.7.1 ; sys_platform != 'win32' and python_version < '3.7'
+lxml==4.2.3 ; sys_platform != 'win32' and python_version >= '3.7'
+lxml ; sys_platform == 'win32'
+Mako==1.0.4
+MarkupSafe==0.23
+mock==2.0.0
+num2words==0.5.6
+ofxparse==0.16
+paramiko
+passlib==1.6.5
+phonenumbers
+Pillow==4.0.0 ; python_version < '3.7'
+Pillow==6.1.0 ; python_version >= '3.7'
+psutil==4.3.1; sys_platform != 'win32'
+psutil==5.6.3; sys_platform == 'win32'
+psycopg2==2.7.3.1; sys_platform != 'win32'
+psycopg2==2.8.3; sys_platform == 'win32'
 pycryptodome
-pycrypto
-pydot
-pyinotify
-pyjon.utils
-PyJWT
-pyldap
-pyopenssl
+pydot==1.2.3
+pyfcm
+pyldap==2.4.28; sys_platform != 'win32'
 pyotp
-pyparsing
-pyPdf
-pyserial
-python_dateutil
-python_ldap
-python_openid
-pytz
-pyusb
-pywebdav
-PyYAML
-qrcode
-reportlab
-requests
-requests_futures
-requests_oauthlib
-requests_pkcs12
-simplejson
-six
-SOAPpy
-stripe
-suds==0.4
-twilio
-unittest2
-vatnumber
-vobject
-Werkzeug
-wit
-wsgiref
-xlrd
-xlsxwriter
-xlwt
-xmltodict
+pyparsing==2.1.10
+PyPDF2==1.26.0
+pyserial==3.1.1
+python-dateutil==2.5.3
+pytz==2016.7
+pyusb==1.0.0
+PyYAML==3.12 ; python_version < '3.7'
+PyYAML==3.13 ; python_version >= '3.7'
+qrcode==5.3
+reportlab==3.3.0
+requests==2.20.0
+suds-jurko==0.6
+vatnumber==1.2
+vobject==0.9.3
+Werkzeug==0.11.15 ; sys_platform != 'win32'
+Werkzeug==0.16.0  ; sys_platform == 'win32'
+XlsxWriter==0.9.3
+xlwt==1.3.*
+xlrd==1.0.0
+pypiwin32 ; sys_platform == 'win32'
