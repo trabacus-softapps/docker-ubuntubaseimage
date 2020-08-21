@@ -14,7 +14,7 @@ echo "deb http://apt.postgresql.org/pub/repos/apt/ bionic-pgdg main" > /etc/apt/
 ##run apt-key adv --keyserver keyserver.ubuntu.com --recv-keys ABF5BD827BD9BF62 
 ##echo "+ Enabled Nginx APT repo"
 ##echo "deb http://nginx.org/packages/ubuntu/ bionic nginx" > /etc/apt/sources.list.d/nginx.list
- 
+
 ## Nodejs Latest
 curl -sL https://deb.nodesource.com/setup_10.x | bash -
 run apt-get update
