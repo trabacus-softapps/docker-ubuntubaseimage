@@ -8,7 +8,7 @@
 # https://github.com/phusion/baseimage-docker/blob/master/Changelog.md
 # for a list of version numbers.
 # FROM phusion/baseimage:bionic-1.0.0-amd64
-FROM ubuntu:latest
+FROM ubuntu:focal
 MAINTAINER Arun T K <arun.kalikeri@xxxxxxxx.com>
 
 ADD . /pd_build
