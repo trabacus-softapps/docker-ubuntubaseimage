@@ -16,7 +16,9 @@ run sudo ln -s /usr/local/bin/wkhtmltoimage /usr/bin/wkhtmltoimage
 # This example uses the free version from https://dev.maxmind.com/geoip/geoip2/geolite2/
 #
 # We only use the city db, you can add the country db and others if you want them.
-run mkdir -p /usr/share/geoip 
+run mkdir -p /usr/share/geoip
+run mkdir -p /usr/share/GeoIP
 curl -Lf -o /tmp/city.tar.gz https://www.trabacus.com/geolite2/GeoLite2-City_20200107.tar.gz
 run tar xf /tmp/city.tar.gz -C /usr/share/geoip --strip 1
+run tar xf /tmp/city.tar.gz -C /usr/share/GeoIP --strip 1
 run ls -al /usr/share/geoip/
