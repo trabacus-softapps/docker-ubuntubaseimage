@@ -4,7 +4,7 @@ source /pd_build/buildconfig
 
 ## Many NPM packages contain native extensions and require a compiler.
 run minimal_apt_get_install build-essential libpq-dev libffi-dev libssl-dev libxml2-dev libxslt1-dev libjpeg-dev libfreetype6-dev zlib1g-dev libldap2-dev libsasl2-dev libxrender1 fontconfig xvfb sudo poppler-utils
-run minimal_apt_get_install postgresql-client-10 nodejs
+run minimal_apt_get_install postgresql-client-10 nodejs npm
 run set -x && npm install -g less less-plugin-clean-css rtlcss
 curl -Lf -o /tmp/wkhtmltox_0.12.5-1.bionic_amd64.deb https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.5/wkhtmltox_0.12.5-1.bionic_amd64.deb
 run cd /opt/
