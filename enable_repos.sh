@@ -5,7 +5,8 @@ source /pd_build/buildconfig
 header "Preparing APT repositories"
 
 ## PostgreSQL Latest
-run apt-get install gnupg
+run apt-get update
+run apt-get install gnupg2
 run apt-key adv --keyserver keyserver.ubuntu.com --recv-keys B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8
 echo "+ Enabled PostgreSQL APT repo"
 echo "deb http://apt.postgresql.org/pub/repos/apt/ bionic-pgdg main" > /etc/apt/sources.list.d/pgdg.list
