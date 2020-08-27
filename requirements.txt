@@ -58,6 +58,7 @@ requests-futures
 route53
 simplejson==3.13.2
 six
+SOAPpy
 stream-chat
 stripe
 suds-jurko==0.6
