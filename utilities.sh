@@ -3,12 +3,13 @@ set -e
 source /pd_build/buildconfig
 
 ## Many NPM packages contain native extensions and require a compiler.
-run minimal_apt_get_install build-essential libpq-dev libffi-dev libssl-dev libxml2-dev libxslt1-dev libjpeg-dev libfreetype6-dev zlib1g-dev libldap2-dev libsasl2-dev libxrender1 fontconfig xvfb sudo poppler-utils \
-&& minimal_apt_get_install postgresql-client-10 nodejs \
-&& set -x && npm install -g less less-plugin-clean-css rtlcss \
-&& curl -Lf -o /tmp/wkhtmltox_0.12.6-1.bionic_amd64.deb https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6-1/wkhtmltox_0.12.6-1.bionic_amd64.deb \
+run minimal_apt_get_install build-essential sudo ca-certificates dirmngr fonts-noto-cjk xz-utils xz-utils \
+&& minimal_apt_get_install postgresql-client nodejs \
+&& curl https://www.npmjs.com/install.sh | sudo sh \
+&& set -x && npm install -g postcss@latest rtlcss@latest \
+&& curl -Lf -o /tmp/wkhtmltox_0.12.6-1.focal_amd64.deb https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6-1/wkhtmltox_0.12.6-1.focal_amd64.deb \
 && cd /opt/ \
-&& minimal_apt_get_install /tmp/wkhtmltox_0.12.6-1.bionic_amd64.deb 
+&& minimal_apt_get_install /tmp/wkhtmltox_0.12.6-1.focal_amd64.deb
 run sudo ln -s /usr/local/bin/wkhtmltopdf /usr/bin/wkhtmltopdf && sudo ln -s /usr/local/bin/wkhtmltoimage /usr/bin/wkhtmltoimage 
 
 # Download Maxmind db version 2

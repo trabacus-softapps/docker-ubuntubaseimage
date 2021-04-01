@@ -1,2 +1,2 @@
 #!/bin/bash
-docker build -t docker/ubuntubaseimage:PY37 .
+docker build -t docker/ubuntubaseimage:PY38 .
