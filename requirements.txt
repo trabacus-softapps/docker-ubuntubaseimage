@@ -3,6 +3,7 @@
 Babel==2.6.0
 chardet==3.0.4
 decorator==4.3.0
+docusign-esign
 docutils==0.14
 ebaysdk==2.1.5
 feedparser==5.2.1
@@ -41,13 +42,13 @@ pydot==1.4.1
 python-ldap==3.1.0; sys_platform != 'win32'
 PyPDF2==1.26.0
 pyserial==3.4
-python-dateutil==2.7.3
-pytz==2019.1
+python-dateutil
+pytz
 pyusb==1.0.2
 qrcode==6.1
 reportlab==3.5.13; python_version < '3.8'
 reportlab==3.5.55; python_version >= '3.8'
-requests==2.21.0
+requests
 stripe
 twilio
 zeep==3.2.0
