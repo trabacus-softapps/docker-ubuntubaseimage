@@ -1,7 +1,7 @@
 #### To build wheel archives (pip3 wheel --requirement=pip-req.txt --wheel-dir=/tmp/wheelhouse)  or to run pip3 install --upgrade --requirement=pip-req.txt  #### Install - sudo apt-get install python3-dev libffi-dev libssl-dev libxml2-dev libxslt1-dev libjpeg-dev libfreetype6-dev zlib1g-dev libldap2-dev libsasl2-dev libpq-dev build-essential autoconf libtool pkg-config
 
 Babel==2.6.0
-chardet==3.0.4
+chardet
 decorator==4.3.0
 docusign-esign
 docutils==0.14
