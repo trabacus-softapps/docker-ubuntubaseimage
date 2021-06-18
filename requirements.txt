@@ -5,6 +5,7 @@ chardet
 decorator==4.3.0
 docusign-esign
 docutils==0.14
+dwollav2
 ebaysdk==2.1.5
 feedparser==5.2.1
 freezegun==0.3.11; python_version < '3.8'
