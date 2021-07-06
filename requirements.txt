@@ -51,6 +51,7 @@ reportlab==3.5.13; python_version < '3.8'
 reportlab==3.5.55; python_version >= '3.8'
 requests
 stripe
+tweepy
 twilio
 zeep==3.2.0
 python-stdnum==1.8
