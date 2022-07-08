@@ -67,7 +67,7 @@ simplejson
 six
 SOAPpy
 stripe
-suds==0.4
+suds==1.0.0
 twilio
 unittest2
 vatnumber
