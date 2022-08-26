@@ -52,6 +52,7 @@ qrcode==6.1
 reportlab==3.5.13; python_version < '3.8'
 reportlab==3.5.59; python_version >= '3.8'
 requests
+simplejson
 stripe
 tweepy
 twilio
