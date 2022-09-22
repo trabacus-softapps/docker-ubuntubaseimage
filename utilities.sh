@@ -4,7 +4,7 @@ source /pd_build/buildconfig
 
 ## Many NPM packages contain native extensions and require a compiler.
 run minimal_apt_get_install build-essential sudo ca-certificates dirmngr fonts-noto-cjk xz-utils xz-utils \
-&& minimal_apt_get_install postgresql-client nodejs \
+&& minimal_apt_get_install postgresql-client \
 && curl https://www.npmjs.com/install.sh | sudo sh \
 && set -x && npm install -g postcss@latest rtlcss@latest \
 && curl -Lf -o /tmp/wkhtmltox_0.12.6-1.focal_amd64.deb https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6-1/wkhtmltox_0.12.6-1.focal_amd64.deb \
