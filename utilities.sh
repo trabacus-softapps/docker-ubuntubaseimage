@@ -5,12 +5,15 @@ source /pd_build/buildconfig
 ## Many NPM packages contain native extensions and require a compiler.
 run minimal_apt_get_install build-essential sudo ca-certificates dirmngr fonts-noto-cjk xz-utils xz-utils \
 && minimal_apt_get_install postgresql-client \
-&& curl https://www.npmjs.com/install.sh | sudo sh \
+&& curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash - \
+&& minimal_apt_get_install nodejs \
+&& set -x && npm install -g npm@latest \
 && set -x && npm install -g postcss@latest rtlcss@latest \
 && curl -Lf -o /tmp/wkhtmltox_0.12.6-1.focal_amd64.deb https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6-1/wkhtmltox_0.12.6-1.focal_amd64.deb \
 && cd /opt/ \
-&& minimal_apt_get_install /tmp/wkhtmltox_0.12.6-1.focal_amd64.deb
-run sudo ln -s /usr/local/bin/wkhtmltopdf /usr/bin/wkhtmltopdf && sudo ln -s /usr/local/bin/wkhtmltoimage /usr/bin/wkhtmltoimage 
+&& minimal_apt_get_install /tmp/wkhtmltox_0.12.6-1.focal_amd64.deb \
+&& ln -s /usr/local/bin/wkhtmltopdf /usr/bin/wkhtmltopdf \
+&& ln -s /usr/local/bin/wkhtmltoimage /usr/bin/wkhtmltoimage
 
 # Download Maxmind db version 2
 # This example uses the free version from https://dev.maxmind.com/geoip/geoip2/geolite2/
