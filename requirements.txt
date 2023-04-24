@@ -31,6 +31,7 @@ lxml ; sys_platform == 'win32'
 Mako==1.0.7
 MarkupSafe==1.1.0
 num2words==0.5.6
+ocpp
 ofxparse==0.19
 paho-mqtt
 passlib==1.7.2
