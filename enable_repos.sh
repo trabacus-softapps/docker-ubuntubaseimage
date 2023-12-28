@@ -9,7 +9,7 @@ header "Preparing APT repositories"
 ## PostgreSQL Latest
 echo "+ Enabled PostgreSQL APT repo"
 
-echo 'deb http://apt.postgresql.org/pub/repos/apt/ focal-pgdg main' > /etc/apt/sources.list.d/pgdg.list \
+echo 'deb http://apt.postgresql.org/pub/repos/apt/ jammy-pgdg main' > /etc/apt/sources.list.d/pgdg.list \
     && GNUPGHOME="$(mktemp -d)" \
     && export GNUPGHOME \
     && repokey='B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8' \
@@ -19,6 +19,6 @@ echo 'deb http://apt.postgresql.org/pub/repos/apt/ focal-pgdg main' > /etc/apt/s
     && rm -rf "$GNUPGHOME" 
 
 ## Nodejs Latest
-curl -sL https://deb.nodesource.com/setup_14.x | bash - \
+curl -sL https://deb.nodesource.com/setup_16.x | bash - \
 && apt-get update \
 && apt-get upgrade -y -o Dpkg::Options::="--force-confold"

@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM ubuntu:22.04
 MAINTAINER Arun T K <arun.kalikeri@xxxxxxxx.com>
 
 ADD . /pd_build
