@@ -9,9 +9,9 @@ run minimal_apt_get_install build-essential sudo ca-certificates dirmngr fonts-n
 && minimal_apt_get_install nodejs \
 && set -x && npm install -g npm@latest \
 && set -x && npm install -g postcss@latest rtlcss@latest \
-&& curl -Lf -o /tmp/wkhtmltox_0.12.6-1.focal_amd64.deb https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6-1/wkhtmltox_0.12.6-1.focal_amd64.deb \
+&& curl -Lf -o /tmp/wkhtmltox_0.12.6.1-2.jammy_amd64.deb https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6.1-2/wkhtmltox_0.12.6.1-2.jammy_amd64.deb \
 && cd /opt/ \
-&& minimal_apt_get_install /tmp/wkhtmltox_0.12.6-1.focal_amd64.deb \
+&& minimal_apt_get_install /tmp/wkhtmltox_0.12.6.1-2.jammy_amd64.deb \
 && ln -s /usr/local/bin/wkhtmltopdf /usr/bin/wkhtmltopdf \
 && ln -s /usr/local/bin/wkhtmltoimage /usr/bin/wkhtmltoimage
 
