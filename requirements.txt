@@ -9,6 +9,7 @@ docutils==0.16
 dwollav2
 ebaysdk==2.1.5
 feedparser==5.2.1
+ffmpeg
 freezegun==0.3.11; python_version < '3.8'
 freezegun==0.3.15; python_version >= '3.8'
 gevent==1.1.2 ; sys_platform != 'win32' and python_version < '3.7'
