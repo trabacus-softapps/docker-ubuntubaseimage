@@ -8,6 +8,5 @@ run /pd_build/utilities.sh
 
 run /pd_build/python.sh
 
-run /pd_build/nginx.sh
 
 run /pd_build/finalize.sh

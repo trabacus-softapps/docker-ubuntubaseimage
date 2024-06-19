@@ -6,7 +6,7 @@ header "Installing Python..."
 
 ## Install Python.
 run apt-get install -y python python-dev
-curl https://bootstrap.pypa.io/get-pip.py | python
+curl https://bootstrap.pypa.io/pip/2.7/get-pip.py | python
 run pip install --upgrade --no-index --pre \
         --find-links=/pd_build/lib  --requirement=/pd_build/requirements.txt
 
