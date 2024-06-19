@@ -1,7 +1,7 @@
 #### To build wheel archives (pip wheel --requirement=pip-req.txt --wheel-dir=/tmp/wheelhouse)  or to run pip install --upgrade --requirement=pip-req.txt  #### Install - sudo apt-get install python-dev libffi-dev libssl-dev libxml2-dev libxslt1-dev libjpeg-dev libfreetype6-dev zlib1g-dev libldap2-dev libsasl2-dev libpq-dev libgeoip-dev build-essential autoconf libtool pkg-config
 
 Babel==1.3
-Jinja2==2.7.3
+Jinja2==3.1.4
 Mako==1.0.1
 MarkupSafe==0.23
 Pillow==2.7.0
