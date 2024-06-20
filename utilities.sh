@@ -3,7 +3,7 @@ set -e
 source /pd_build/buildconfig
 
 ## Many NPM packages contain native extensions and require a compiler.
-run minimal_apt_get_install sudo poppler-utils
+run minimal_apt_get_install build-essential libpq-dev libffi-dev libssl-dev libxml2-dev libxslt1-dev libjpeg-dev libfreetype6-dev zlib1g-dev libldap2-dev libsasl2-dev libxrender1 fontconfig sudo poppler-utils
 run minimal_apt_get_install postgresql-client-9.6 nodejs
 #run sudo ln -s /usr/bin/nodejs /usr/bin/node
 run minimal_apt_get_install npm
