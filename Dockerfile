@@ -1,4 +1,4 @@
-FROM python:3.8.20-slim-bookworm
+FROM python:3.8.20-slim-bullseye
 
 ADD . /pd_build
 

@@ -6,9 +6,9 @@ source /pd_build/buildconfig
 run minimal_apt_get_install build-essential sudo ca-certificates dirmngr fonts-noto-cjk xz-utils xz-utils libssl-dev libxml2-dev libxslt1-dev libjpeg-dev libfreetype6-dev zlib1g-dev libldap2-dev libsasl2-dev build-essential postgresql-client sudo xfonts-75dpi xfonts-base fontconfig libjpeg62-turbo libx11-6 libxcb1 libxext6 libxrender1 xfonts-75dpi xfonts-base \
 && curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash - \
 && apt-get install nodejs -y \
-&& curl -Lf -o /tmp/wkhtmltox_bookworm_amd64.deb  https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6.1-3/wkhtmltox_0.12.6.1-3.bookworm_amd64.deb \
+&& curl -Lf -o /tmp/wkhtmltox_bullseye_amd64.deb https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6.1-3/wkhtmltox_0.12.6.1-3.bullseye_amd64.deb \
 && cd /opt/ \
-&& minimal_apt_get_install /tmp/wkhtmltox_bookworm_amd64.deb
+&& minimal_apt_get_install /tmp/wkhtmltox_bullseye_amd64.deb
 run sudo ln -s /usr/local/bin/wkhtmltopdf /usr/bin/wkhtmltopdf
 run sudo ln -s /usr/local/bin/wkhtmltoimage /usr/bin/wkhtmltoimage
 
