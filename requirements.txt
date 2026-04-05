@@ -4,6 +4,7 @@ aiohttp
 Babel==2.6.0
 boto3
 chardet
+cryptography < 42
 decorator==4.3.0
 docusign-esign
 docutils==0.16
